@@ -1,0 +1,31 @@
+name: "Get Environment Variables"
+description: "Get the value of an environment variable"
+author: "Sonu Kumar"
+
+inputs:
+  repo:
+    description: "The repository to get the environment variable from"
+    required: false
+    default: ${{ github.repository }}
+  env_name:
+    description: "The name of the environment"
+    required: true
+  gh_token:
+    description: "GitHub token for authentication"
+    required: true 
+  file_type:
+    description: "The file format to save the environment variables (json or env or .env)"
+    required: false
+    default: "json"   
+
+runs:
+  using: "node20"
+  main: "index.js"
+
+branding:
+  icon: "settings"
+  color: "gray-dark"
+
+
+
+    

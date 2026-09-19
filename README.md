@@ -1,4 +1,4 @@
-# get-env-vars
+# get-env-vars 
 
 A GitHub Action that fetches environment variables from a repository environment using the `gh` CLI and exports them into the workflow environment. It also writes results to files.
 
